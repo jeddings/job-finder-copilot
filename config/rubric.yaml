@@ -1,0 +1,38 @@
+dimensions:
+  - name: "Core Role Match"
+    weight: 0.40
+    description: "Direct parallels in work history to primary JD responsibilities"
+  - name: "Seniority Signal"
+    weight: 0.20
+    description: "Scope, scale, org complexity, budget, stakeholder level"
+  - name: "Domain Depth"
+    weight: 0.20
+    description: "Owned systems and genuine depth vs. adjacent exposure"
+  - name: "Differentiators"
+    weight: 0.20
+    description: "Quantified impact, 0→1 builds, VP-level credibility, cross-org orchestration"
+
+calibration:
+  strengths:
+    - "Complex cross-functional orchestration across large matrixed organizations"
+    - "Platform governance and developer ecosystems"
+    - "Reliability, compliance, and trust systems"
+    - "ML-adjacent program management"
+    - "0→1 product and program builds"
+    - "API and developer platform strategy"
+  weaknesses:
+    - "Pure consumer product management (B2C UX-heavy roles)"
+    - "Individual contributor engineering roles"
+    - "Deep ML modeling or MLOps roles"
+    - "Roles requiring direct reports management (Jeff is currently IC)"
+  superpower: >
+    Acting as connective tissue across large matrixed organizations —
+    aligning engineering, legal, policy, and partner teams toward shared goals.
+    Weight this heavily for Platform, TPM, Staff/Principal PM, and Developer Relations roles.
+
+scoring_scale:
+  "9-10": "Exceptional match — Jeff is a top-10% candidate for this role"
+  "7-8": "Strong match — clear relevant experience, apply with confidence"
+  "5-6": "Moderate match — transferable skills but meaningful gaps"
+  "3-4": "Weak match — significant domain or level mismatch"
+  "1-2": "Poor match — wrong domain, level, or role type"

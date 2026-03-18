@@ -2,20 +2,20 @@
 
 AI-assisted job-fit analysis.
 
-This is a personal learning project.
+This is a personal learning project. I built it to learn practical AI engineering patterns in a real workflow: retrieval-augmented generation (RAG), prompt design, structured outputs, and simple product UX.
 
-I built it to learn practical AI engineering patterns in a real workflow: retrieval-augmented generation, prompt design, structured outputs, and simple product UX.
+I am using GitHub Copilot as part of the learning process while I review and adapt the code.
 
-The project evaluates how well a job description matches one person's background by combining:
-- Retrieval-Augmented Generation (RAG) over personal career documents
+The project evaluates how well a job description matches someone's background by combining:
+- RAG over personal career documents
 - A weighted scoring rubric
 - Structured LLM output validated with Pydantic
 - Streamlit UI + CLI workflows
 
 ## What It Does
 
-Given a pasted job description, the app:
-1. Cleans and segments the JD (core responsibilities vs qualifications boilerplate)
+Given a job description, the app:
+1. Cleans and segments the JD (core responsibilities vs. qualifications boilerplate)
 2. Retrieves the most relevant career evidence from a local Chroma vector store
 3. Sends JD + retrieved evidence + rubric instructions to Claude
 4. Forces structured JSON output through a tool schema
@@ -27,11 +27,11 @@ Given a pasted job description, the app:
    - Lead-with points and watch-outs
    - Apply/skip recommendation
 
-It also supports comparing 2-3 roles side-by-side.
+It also supports comparing 2-3 roles side by side.
 
 ## Why This Exists
 
-I wanted a project that was useful in daily life and technically deep enough to teach me modern LLM app patterns.
+I wanted a project that was useful in my current daily life and technically deep enough to teach me modern LLM app patterns.
 
 This repo is intentionally iterative. I use it to test ideas, keep what works, and refactor as I learn.
 
@@ -43,7 +43,7 @@ This repo is intentionally iterative. I use it to test ideas, keep what works, a
 - Configurable rubric in YAML
 - Local ChromaDB persistence
 - Story extraction utility for STAR-style examples
-- Retry/backoff handling for transient Anthropic overload errors (including HTTP 529)
+- Retry / backoff handling for transient Anthropic overload errors (including HTTP 529)
 
 ## Project Intent
 
@@ -142,8 +142,7 @@ This project expects source files listed in `ingest/loader.py`:
 - Resume PDF
 - Career operating brief
 - Core skills/assets
-- Positioning variants
-- Peer feedback
+- Positioning (resume) variants
 
 ### Important for Other Users
 
@@ -266,6 +265,7 @@ python scripts/extract_stories.py
 ## Notes for External Readers
 
 - This repository is maintained as a personal learning codebase.
-- It may change quickly and does not guarantee backwards compatibility.
+- It may change quickly, caveat emptor.
 - You are welcome to read and adapt ideas, but there is no formal support commitment.
 - If something looks rough around the edges, that is usually because I am optimizing for learning speed over polish.
+- If you have any suggestions, they are most appreciated!
